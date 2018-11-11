@@ -1,10 +1,8 @@
-// Collaborators:
-//  Chase Clarke, Email: cfclarke@bu.edu , BUID: U62715342
-//  Yahia Bakour, Email:yehia234@bu.edu, BUID: U37575373
+//  Copyright Chase Clarke cfclarke@bu.edu 
 /*
  To solve this problem:
-    • We first imported the text file and entered its contents into a 2d array.
-    • We then execute BFS on the array to find the shortest path:
+    • I first imported the text file and entered its contents into a 2d array.
+    • I then execute BFS on the array to find the shortest path:
         - This is done with 1) a queue, 2) an additional 2d vector with identical dimensions to the text file that is used to check if visited
             and 3) a node struct 'pointDist' that holds the location of the node and its distance to (0,0).
         - A for loop is then run checking if there is a valid adjacent node above, below, right or left of current location. nodes are added
@@ -21,7 +19,6 @@
  horizontally or vertically one index position with each step (both left-right and updown).
  
  Runtime: O(n^2) because it is an NxN matrix and we are using Breadth-First-Search (BFS)
- 
  Space complexity: Space needed for extra matrices
  
 */
